@@ -20,7 +20,7 @@ const CopyLinkButton = ({ url }) => {
 			type="button"
 			onClick={handleCopyClick}
 			title="คัดลอกลิงก์"
-			className="ml-auto flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-blue-300 text-blue-400 transition-colors duration-150 hover:bg-blue-50"
+			className="ml-auto flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-gray-400 transition-colors duration-150 hover:bg-gray-100 hover:text-gray-900"
 		>
 			{isCopied ? "✓" : "🔗"}
 		</button>

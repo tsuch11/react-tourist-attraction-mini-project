@@ -9,7 +9,7 @@ const TripList = ({ trips, onTagClick }) => {
 	return isEmpty ? (
 		<p className="py-10 text-center text-sm text-gray-400">ไม่พบสถานที่ท่องเที่ยวที่ค้นหา</p>
 	) : (
-		<div className="mx-auto flex w-full max-w-3xl flex-col px-6">
+		<div className="flex w-full flex-col divide-y divide-gray-100">
 			{trips.map((trip) => (
 				<TripCard key={trip.eid} trip={trip} onTagClick={onTagClick} />
 			))}
