@@ -27,8 +27,11 @@ const HomePage = () => {
 
 	// ── Render ─────────────────────────────────────────────────────────
 	return (
-		<main className="mx-auto flex w-full max-w-4xl flex-col gap-8 px-4 py-12">
-			<h1 className="text-center text-4xl font-black text-blue-600">เที่ยวไหนดี</h1>
+		<main className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-6 py-16">
+			<div className="flex flex-col items-center gap-2 text-center">
+				<h1 className="text-3xl font-semibold tracking-tight text-gray-900">เที่ยวไหนดี</h1>
+				<p className="text-sm text-gray-400">ค้นหาที่เที่ยวที่ใช่ แล้วไปกัน</p>
+			</div>
 
 			<SearchBar searchValue={searchValue} onSearchChange={setSearchValue} />
 
